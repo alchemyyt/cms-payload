@@ -21,7 +21,8 @@ const start = async () => {
   })
 
   // Add your own express routes here
-  app.use(cors())
   app.listen(3000);
 }
+app.use(cors())
+
 start();
