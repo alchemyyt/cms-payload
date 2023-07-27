@@ -16,6 +16,9 @@ export default buildConfig({
     // Add Collections here
     // Examples,
   ],
+  csrf: [ // whitelist of domains to allow cookie auth from
+    'https://payload-sfkc.onrender.com',
+  ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
   },
