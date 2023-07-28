@@ -1,18 +1,29 @@
+import { text } from 'express';
 import { CollectionConfig } from 'payload/types';
-
 const Posts: CollectionConfig = {
+  access:{
+    read:()=>true
+  },
   slug: 'posts',//url
   admin: {
     useAsTitle: 'title',//va a buscar por nombre
   },
   fields: [
     {
+      name:'slug',
+      type:'text',
+    },
+    {
 			name: 'title',
 			type: 'text', 
 		},
 		{
 			name: 'content',
-			type: 'richText', 
+			type: 'code', 
+      admin: {
+        language: 'html'
+      }
+
 		},
     {
 			name: 'tags',
