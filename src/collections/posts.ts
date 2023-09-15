@@ -10,6 +10,20 @@ const Posts: CollectionConfig = {
   },
   fields: [
     {
+      name:'category',
+      type:'select',
+      options: [
+        {
+          label: 'Web',
+          value: 'web',
+        },
+        {
+          label: 'Ingles',
+          value: 'ingles',
+        }
+      ]
+    },
+    {
       name:'slug',
       type:'text',
     },
