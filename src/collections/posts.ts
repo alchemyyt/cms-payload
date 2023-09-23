@@ -24,10 +24,6 @@ const Posts: CollectionConfig = {
       ]
     },
     {
-      name:'slug',
-      type:'text',
-    },
-    {
 			name: 'title',
 			type: 'text', 
 		},
@@ -40,7 +36,7 @@ const Posts: CollectionConfig = {
 
 		},
     {
-			name: 'tags',
+			name: 'subject',
 			type: 'text', 
 		},
     {
