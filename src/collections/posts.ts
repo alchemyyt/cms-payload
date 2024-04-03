@@ -50,10 +50,10 @@ const Posts: CollectionConfig = {
       },
     },
     {//relacionar otra coleccion a esta
-      name:'image',
+      name:'image-url',
       type:'upload',
       relationTo:'media'//esto es lo que relaciona
-    }
+    },
   ],
 };
 
