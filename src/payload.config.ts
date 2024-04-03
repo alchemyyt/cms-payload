@@ -3,7 +3,6 @@ import path from 'path';
 // import Examples from './collections/Examples';
 import Users from './collections/Users';
 import Posts from './collections/posts';
-import { Media } from './collections/media';
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
   admin: {
@@ -12,7 +11,6 @@ export default buildConfig({
   collections: [
     Users,
     Posts,
-    Media
     // Add Collections here
     // Examples,
   ],

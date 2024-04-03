@@ -49,11 +49,10 @@ const Posts: CollectionConfig = {
         },
       },
     },
-    {//relacionar otra coleccion a esta
-      name:'image-url',
-      type:'upload',
-      relationTo:'media'//esto es lo que relaciona
-    },
+    {
+			name: 'image',
+			type: 'text', 
+		},
   ],
 };
 
